@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 11e87d5 (fix: clean project update)
   },
   "keywords": [],
   "author": "",
@@ -14,6 +18,10 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "dotenv": "^17.4.2",
+<<<<<<< HEAD
+=======
+    "express": "^5.2.1",
+>>>>>>> 11e87d5 (fix: clean project update)
     "groq-sdk": "^1.2.1",
     "node-telegram-bot-api": "^0.66.0"
   }

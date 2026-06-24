@@ -6,6 +6,14 @@ const fs = require("fs");
 const KNOWLEDGE_FILE = "./knowledge.txt";
 const CONTENT_FILE = "./aibina-content.txt";
 
+<<<<<<< HEAD
+=======
+const express = require("express");
+const app = express();
+
+const PORT = process.env.PORT || 3000;
+
+>>>>>>> 11e87d5 (fix: clean project update)
 if (!fs.existsSync(CONTENT_FILE)) {
   fs.writeFileSync(CONTENT_FILE, "");
 }
@@ -431,6 +439,16 @@ const username = msg.from.username || "NoUsername";
   }
 });
 
+<<<<<<< HEAD
+=======
+app.get("/", (req, res) => {
+  res.send("Bot is running ✅");
+});
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log("Server running on port", PORT);
+});
+>>>>>>> 11e87d5 (fix: clean project update)
 
 bot.on("polling_error", (err) => console.error("Polling error:", err.message));
 
